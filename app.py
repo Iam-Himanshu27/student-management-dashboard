@@ -7,7 +7,8 @@ import plotly.express as px
 # DASHBOARD HEADER
 # ==================================
 
-st.title("Student Management Dashboard")
+st.title("Student Management Dashboard - version 2")
+st.success("Successfully deployed using Docker Version 2!")
 st.write("Welcome to my first dashboard!")
 
 st.header("Student Overview")
@@ -227,7 +228,7 @@ if len(students_data) > 0:
 
     st.plotly_chart(
         performance_chart,
-        use_container_width=True
+        width="Stretch"
     )
 
 else:
